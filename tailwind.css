@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    @apply h-90 relative bg-main-img bg-cover bg-no-repeat bg-center;
+}
+
+.navbar{
+    @apply pt-4;
+}
+
+.nav-icon{
+    @apply hover:shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(0,_0,_0,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:py-2 hover:px-4 hover:rounded-full;
+}
+
+.container{
+    @apply max-w-7xl w-90 my-0 mx-auto rounded-lg text-white;
+}
+
+.container-sm{
+    @apply max-w-7xl w-70 my-0 mx-auto text-white;
+}
+
+.container1{
+    @apply flex justify-between p-4 shadow-[rgba(0,_0,_0,_0.5)_0px_3px_8px];
+}
+
+.nav-items{
+    @apply pt-1;
+}
+
+.nav-item{
+    @apply inline text-xl px-4;
+}
+
+li a{
+    @apply tracking-lspace;
+}
+
+.logo{
+    @apply text-3xl pl-8 font-bold;
+}
+
+.header-section{
+    @apply absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%] text-center shadow-[rgba(0,_0,_0,_0.5)_1px_4px_9px_1px] rounded-3xl p-5;
+}
+
+.heading{
+    @apply text-3xl text-white font-bold tracking-lspace mb-5;
+}
+
+.header-par{
+    @apply tracking-blspace text-white;
+}
+
+.btn{
+    @apply inline-block bg-white py-em1 px-em2 my-4 rounded-full text-black hover:bg-slate-300;
+}
+
+.show-case{
+    @apply h-96 flex text-black shadow-[5px_5px_rgba(_239,_108,0,_0.4),_10px_10px_rgba(_239,_108,0,_0.3),_15px_15px_rgba(_239,_108,0,_0.2),_20px_20px_rgba(_239,_108,0,_0.1),_25px_25px_rgba(_239,_108,0,_0.05)];
+}
+
+.about-page{
+    @apply bg-orange-100 py-28;
+}
+
+.row{
+    @apply h-full w-1/2;
+}
+
+.row1{
+    @apply bg-[url('./img/10476.jpg')] bg-cover bg-no-repeat bg-center;
+}
+
+.row2{
+    @apply p-7 text-center flex justify-center items-center bg-white;
+}
+
+.heading1{
+    @apply text-black text-3xl mb-3 font-bold;
+}
+
+.uLine{
+    @apply underline underline-offset-8 decoration-web-orange;
+}
+
+.tour-category{
+    @apply h-48 border-2 border-red-500 text-black;
+}
+
+.temp{
+    @apply border-2 border-orange-400 h-full text-black;
+}
